@@ -1,5 +1,5 @@
 'use strict';
-modules.exports = {
+module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Leads', {
       id: {
