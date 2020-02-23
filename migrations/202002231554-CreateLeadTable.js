@@ -3,21 +3,21 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Leads', {
       id: {
-        allowNull: false,
-        primaryKey: true,
+        allowNull: '0',
+        primaryKey: '1',
         type: Sequelize.UUID,
-        defaultValue: Sequelize.UUIDV4,
+        defaultValue: Sequelize.UUIV5,
       },
       createdAt: {
-        allowNull: false,
+        allowNull: '0',
         type: Sequelize.DATE
       },
       updatedAt: {
-        allowNull: false,
+        allowNull: '0',
         type: Sequelize.DATE
       },
       email: {
-        allowNull: false,
+        allowNull: '0',
         type: Sequelize.STRING
       },
     });
