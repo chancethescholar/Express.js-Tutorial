@@ -23,7 +23,7 @@ html(lang='en')
                     td
                       span #{lead.email}
                     td
-                      <a class="btn btn-primary" href="/lead/" + lead.id role="button"> Details </a>
+                      a(class="btn btn-primary" href="/lead/" + lead.id) Details
                     td
                       button(onclick = `deleteLead('${lead.id}')` class="btn btn-primary") Delete
 
