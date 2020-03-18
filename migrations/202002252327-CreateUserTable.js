@@ -18,29 +18,25 @@ module.exports = {
       },
       username: {
         allowNull: true,
-        type: Sequelize.STRING,
+        type: Sequelize.STRING
       },
-
-      firstName: {
+      firstname: {
         allowNull: true,
-        type: Sequelize.STRING,
+        type: Sequelize.STRING
       },
-
-      lastName: {
+      lastname: {
         allowNull: true,
-        type: Sequelize.STRING,
+        type: Sequelize.STRING
       },
-
       password: {
         allowNull: true,
-        type: Sequelize.STRING,
+        type: Sequelize.STRING
       },
-
       email: {
-        allowNull: false,
-        type: Sequelize.STRING,
+      	allowNull: false,
+      	type: Sequelize.STRING
       },
-    });
+    })
   },
   down: (queryInterface, Sequelize) => {
     return queryInterface.dropTable('Users');
